@@ -16,7 +16,6 @@ if not os.path.exists(fr"C:\Users\kyle.anderson\Documents\Dan\Dan_pacs5"):
 # Hardcoded excel file needs to be saved here
 df = pd.read_excel(fr"C:\Users\kyle.anderson\Documents\Dan\PACS5 All Employees Report 220725 final.xlsm")
 
-# df_p = pd.read_excel(fr"positions list, dups removed")
 
 df = df.drop(columns='Unique EE')
 df = df.drop(columns='Last Name')
@@ -47,7 +46,6 @@ df = df.drop(columns='Amount')
 
 building_range = df['Matched_Facility']
 
-# positions = df_p['position_title']
 
 list_of_unique_buildings = set(building_range)
 
